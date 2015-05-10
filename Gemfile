@@ -75,7 +75,13 @@ gem 'devise'
 #
 #        <p class="notice"><%= notice %></p>
 #        <p class="alert"><%= alert %></p>
+# ===============================================================================
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
 # Custom <
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
