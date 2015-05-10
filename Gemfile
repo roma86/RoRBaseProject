@@ -37,7 +37,10 @@ gem "therubyracer"
 gem "less-rails"
 
 gem "twitter-bootstrap-rails"
-#rails g bootstrap:install
+# rails g bootstrap:install
+# rails g bootstrap:layout application fixed
+# rails g scaffold restaurant name:string --skip-stylesheets
+# rails g bootstrap:themed restaurants -f
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
