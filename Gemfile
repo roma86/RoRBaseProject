@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Custom
+# Custom >
 gem "therubyracer"
 gem "less-rails"
 
@@ -41,6 +41,28 @@ gem "twitter-bootstrap-rails"
 # rails g bootstrap:layout application fixed
 # rails g scaffold restaurant name:string --skip-stylesheets
 # rails g bootstrap:themed restaurants -f
+
+gem 'devise'
+# rails g devise:install
+# rails g devise:views
+# ===============================================================================
+#
+#     Some setup you must do manually if you haven't yet:
+#
+#   1. Ensure you have defined default url options in your environments files. Here
+#      is an example of default_url_options appropriate for a development environment
+#      in config/environments/development.rb:
+#
+#        config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+#
+#      In production, :host should be set to the actual host of your application.
+#
+#   3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+#      For example:
+#
+#        <p class="notice"><%= notice %></p>
+#        <p class="alert"><%= alert %></p>
+# Custom <
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
