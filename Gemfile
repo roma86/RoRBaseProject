@@ -80,6 +80,9 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-vkontakte'
+
+gem 'rabl'
+gem 'oj'
 # Custom <
 
 
