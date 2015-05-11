@@ -6,5 +6,7 @@
 - rabl + oj + gon
 - simple_form
 - twitter-bootstrap-rails
+- compass-rails
+- bootstrap-sass
 
 turbolinks removed
