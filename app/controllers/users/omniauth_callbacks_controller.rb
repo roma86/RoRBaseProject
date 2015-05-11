@@ -21,10 +21,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       sign_in_and_redirect @user
       set_flash_message(:notice, :success, :kind => provider_kind) if is_navigational_format?
     elsif @user.email.blank?
-      flash[:error] = I18n.t 'devise.registrations.add_email'
+      flash[:error] = I18n.t('devise.registrations.add_email')
       render 'users/omniauth_callbacks/add_email'
     else
-      flash[:error] = I18n.t 'errors.messages.social_email_taken'
+      flash[:error] = I18n.t('errors.messages.social_email_taken')
       session['devise.omniauth_data'] = request.env['omniauth.auth']
       redirect_to new_user_registration_url
     end
