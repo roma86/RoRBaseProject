@@ -9,7 +9,7 @@ class Users::AccountsController < ApplicationController
       flash[:notice] = I18n.t("devise.registrations.signed_up")
       sign_in_and_redirect(:user, @user)
     else
-      flash[:error] = I18n.t("devise.omniauth_callbacks.failure"), :kind => data['provider'].titleize, :reason => @user.errors.full_messages.first
+      flash[:error] = I18n.t("devise.omniauth_callbacks.failure", :kind => data['provider'].titleize, :reason => @user.errors.full_messages.first)
       render "users/omniauth_callbacks/add_email"
     end
   end
