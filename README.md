@@ -3,7 +3,7 @@
 #### Includes
 
 - Devise + omniauth
-- rabl + oj
+- rabl + oj + gon
 - simple_form
 - twitter-bootstrap-rails
 
