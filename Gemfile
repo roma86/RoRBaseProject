@@ -83,6 +83,9 @@ gem 'omniauth-vkontakte'
 
 gem 'rabl'
 gem 'oj'
+#use jsonview chrome extension
+
+
 # Custom <
 
 

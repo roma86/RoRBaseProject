@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     post "account/create" => "users/accounts#create"
   end
 
-  get 'home/index'
+  match 'api/v1/api' => 'api/v1/api#index', :via => [:get, :post]
 
   root to: "home#index"
 
